@@ -169,7 +169,7 @@ def conceptScore(cols):
     '''
     concept = cols[0]
     try:
-        concept_score=model.wv.similarity(w1=concept,w2="aneurysm")
+        concept_score=model.wv.similarity(w1=concept,w2="intracranial aneurysm")
     except:
         concept_score=0.0
     return concept_score
